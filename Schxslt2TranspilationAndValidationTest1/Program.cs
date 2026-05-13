@@ -12,17 +12,17 @@ var instanceFile = args[1];
 //Console.WriteLine(instanceFile);
 
 var transformer = new XsltTransformer();
-//transformer.PreloadedResources
+
 await transformer.LoadStylesheetAsync(await File.ReadAllTextAsync(transpileLocation), new Uri(transpileLocation));
 
 transformer.SetSourceDocumentUri(new Uri(schematronFile));
 
-var transpiledSchematron = await transformer.TransformAsync(await File.ReadAllTextAsync(schematronFile));
+var transpiledSchematron = await transformer.TransformToValueAsync(await File.ReadAllTextAsync(schematronFile));
 
 
 transformer = new XsltTransformer();
-//transformer.PreloadedResources
-await transformer.LoadStylesheetAsync(transpiledSchematron, new Uri(transpileLocation));
+
+await transformer.LoadStylesheetAsync(transpiledSchematron.ToString(), new Uri(transpileLocation));
 
 transformer.SetSourceDocumentUri(new Uri(instanceFile));
 
