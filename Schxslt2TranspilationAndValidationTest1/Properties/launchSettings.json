@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Schxslt2TranspilationAndValidationTest1": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\marti\\source\\repos\\PhoenixmlWorkbench\\PhoenixmlWorkbench\\wwwroot\\examples\\xslt\\schematron\\price.sch\r\nC:\\Users\\marti\\source\\repos\\PhoenixmlWorkbench\\PhoenixmlWorkbench\\wwwroot\\examples\\xslt\\schematron\\books.xml"
+    },
+    "FlowersSchematron": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\marti\\source\\repos\\PhoenixmlWorkbench\\PhoenixmlWorkbench\\wwwroot\\examples\\xslt\\schematron\\flowers.sch\r\nC:\\Users\\marti\\source\\repos\\PhoenixmlWorkbench\\PhoenixmlWorkbench\\wwwroot\\examples\\xslt\\schematron\\flowers.xml"
+    },
+    "AlphanumericList": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\marti\\OneDrive\\Documents\\schematron\\examples\\list-numbering\\list-check-alphebetic1.sch\r\nC:\\Users\\marti\\OneDrive\\Documents\\schematron\\examples\\list-numbering\\alphabetic-list1.xml"
+    }
+  }
+}
